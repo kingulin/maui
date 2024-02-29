@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="slider.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+
+
+            <Label
+                Text="Wlasciwosci textu"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="40"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Rozmiar: "
+                x:Name="sizer"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="24"
+                HorizontalOptions="Center" />
+
+            <Slider
+                x:Name="slider"
+                ValueChanged="sliderChange"
+                Maximum="40"
+                Minimum="0"/>
+
+
+            <Label
+                Text="Dzien dobry"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="18"
+                x:Name="toChnage"
+                HorizontalOptions="Center" />
+            <Button
+                x:Name="CounterBtn"
+                Text=">>"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="listNames"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
